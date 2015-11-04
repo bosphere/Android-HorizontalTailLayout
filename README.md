@@ -11,6 +11,31 @@ What `HorizontalTailLayout` offers:
 
 <img src="./arts/demo.png" width="500">
 
+Usage
+-----
+
+```
+<com.bosphere.horizontaltaillayout.HorizontalTailLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:center="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:includeFontPadding="false"
+        android:text="text (center)"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_secure"/>
+
+</com.bosphere.horizontaltaillayout.HorizontalTailLayout>
+```
+
 Compatibility
 -------------
 
