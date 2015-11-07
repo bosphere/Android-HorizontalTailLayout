@@ -165,4 +165,40 @@
         </com.bosphere.horizontaltaillayout.HorizontalTailLayout>
 
     </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/img_placeholder4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="16dp"
+            android:background="@android:color/darker_gray"/>
+
+        <com.bosphere.horizontaltaillayout.HorizontalTailLayout
+            android:layout_toLeftOf="@+id/img_placeholder4"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:includeFontPadding="false"
+                android:text="looooooooooooooong text_______________"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(some other text)"/>
+
+        </com.bosphere.horizontaltaillayout.HorizontalTailLayout>
+
+    </RelativeLayout>
 </LinearLayout>

@@ -15,14 +15,14 @@ developer.email=[EMAIL]
 */
 
 ext {
-    LIB_VERSION = '1.0.0'
+    LIB_VERSION = '0.9.0'
 
     bintrayRepo = 'maven'
     bintrayName = 'android-horizontal-tail-layout'
 
-    publishedGroupId = 'com.github.bosphere'
+    publishedGroupId = 'com.github.bosphere.android-horizontaltaillayout'
     libraryName = 'Android-HorizontalTailLayout'
-    artifact = 'android-horizontaltaillayout'
+    artifact = 'horizontaltaillayout'
 
     libraryDescription = 'A simple implementation of a custom layout which solves the issues of grouping a child view with its tailing views.'
 
