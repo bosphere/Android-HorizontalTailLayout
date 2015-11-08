@@ -53,7 +53,7 @@ API 7 (Android 2.1) and up
 License
 -------
 
-Copyright 2014 Yang Bo
+Copyright 2015 Yang Bo
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
