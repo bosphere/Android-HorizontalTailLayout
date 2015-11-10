@@ -9,8 +9,9 @@ Another example is when you want to append another `TextView` after a length-fel
 
 Unfortunately there is no straightforward way to implement this using built-in UI widgets.
 
-What `HorizontalTailLayout` offers:
+#### What `HorizontalTailLayout` offers:
 * smarter layout in general - guarantee that tailing views to follow closely when there is room for display, and squeeze only the first view otherwise
+* center content without the need of using extra layout wrapper
 * easy to use just like other built-in layouts
 
 <img src="./arts/demo.png" width="500">
