@@ -11,7 +11,7 @@ Unfortunately there is no straightforward way to implement this using built-in U
 
 #### What `HorizontalTailLayout` offers:
 * smarter layout in general - guarantee that tailing views to follow closely when there is room for display, and squeeze only the first view otherwise
-* center content without the need of using extra layout wrapper
+* supports 3 gravity modes: `center`, `center_horizontal`, `center_vertical`
 * easy to use just like other built-in layouts
 
 <img src="./arts/demo.png" width="500">
@@ -20,7 +20,7 @@ Usage
 -----
 ```
 dependencies {
-    compile 'com.github.bosphere.android-horizontaltaillayout:horizontaltaillayout:1.0.0'
+    compile 'com.github.bosphere.android-horizontaltaillayout:horizontaltaillayout:1.1.0'
 }
 ```
 
@@ -28,7 +28,7 @@ dependencies {
 <com.bosphere.horizontaltaillayout.HorizontalTailLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:center="true">
+    app:gravity="center_vertical">
 
     <TextView
         android:layout_width="wrap_content"

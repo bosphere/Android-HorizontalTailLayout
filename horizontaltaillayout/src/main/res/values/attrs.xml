@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="HorizontalTailLayout">
-        <attr name="center" format="boolean"/>
+        <attr name="gravity" format="enum">
+            <enum name="center" value="0"/>
+            <enum name="center_horizontal" value="1"/>
+            <enum name="center_vertical" value="2"/>
+        </attr>
     </declare-styleable>
 </resources>
