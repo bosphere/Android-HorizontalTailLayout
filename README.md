@@ -18,13 +18,13 @@ Unfortunately there is no straightforward way to implement this using built-in U
 
 Usage
 -----
-```
+```gradle
 dependencies {
     compile 'com.github.bosphere.android-horizontaltaillayout:horizontaltaillayout:1.1.0'
 }
 ```
 
-```
+```xml
 <com.bosphere.horizontaltaillayout.HorizontalTailLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"

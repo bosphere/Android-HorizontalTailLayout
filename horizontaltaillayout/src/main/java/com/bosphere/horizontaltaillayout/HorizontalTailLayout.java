@@ -15,12 +15,12 @@ import android.view.ViewGroup;
  */
 public class HorizontalTailLayout extends ViewGroup {
 
-    private final int GRAVITY_NOT_DEFINED = -1;
-    private final int GRAVITY_CENTER = 0;
-    private final int GRAVITY_CENTER_HORIZONTAL = 1;
-    private final int GRAVITY_CENTER_VERTICAL = 2;
+    private static final int GRAVITY_NOT_DEFINED = -1;
+    private static final int GRAVITY_CENTER = 0;
+    private static final int GRAVITY_CENTER_HORIZONTAL = 1;
+    private static final int GRAVITY_CENTER_VERTICAL = 2;
 
-    public int gravity = GRAVITY_NOT_DEFINED;
+    private int mGravity = GRAVITY_NOT_DEFINED;
 
     public HorizontalTailLayout(Context context) {
         super(context);
@@ -44,7 +44,7 @@ public class HorizontalTailLayout extends ViewGroup {
 
     private void init(AttributeSet attrs) {
         TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.HorizontalTailLayout);
-        gravity = a.getInt(R.styleable.HorizontalTailLayout_gravity, GRAVITY_NOT_DEFINED);
+        mGravity = a.getInt(R.styleable.HorizontalTailLayout_gravity, GRAVITY_NOT_DEFINED);
         a.recycle();
     }
 
@@ -70,7 +70,7 @@ public class HorizontalTailLayout extends ViewGroup {
             maxHeight = Math.max(maxHeight, childHeight);
         }
 
-        if ((gravity == GRAVITY_CENTER_HORIZONTAL || gravity == GRAVITY_CENTER) &&  parentWidth > sumWidth) {
+        if ((mGravity == GRAVITY_CENTER_HORIZONTAL || mGravity == GRAVITY_CENTER) &&  parentWidth > sumWidth) {
             pl += (parentWidth - sumWidth) >> 1;
         }
 
@@ -84,7 +84,7 @@ public class HorizontalTailLayout extends ViewGroup {
             int cr = cl + child.getMeasuredWidth();
             int ct = pt + lp.topMargin;
             int childHeight = child.getMeasuredHeight() + lp.topMargin + lp.bottomMargin;
-            if (gravity == GRAVITY_CENTER_VERTICAL || gravity == GRAVITY_CENTER) {
+            if (mGravity == GRAVITY_CENTER_VERTICAL || mGravity == GRAVITY_CENTER) {
                 if (childHeight < parentHeight) {
                     ct += (parentHeight - childHeight) >> 1;
                 }
@@ -112,6 +112,8 @@ public class HorizontalTailLayout extends ViewGroup {
             usedWith += view.getMeasuredWidth() + lp.leftMargin + lp.rightMargin;
             maxHeight = Math.max(maxHeight, view.getMeasuredHeight() + lp.topMargin + lp.bottomMargin);
         }
+
+        maxHeight = Math.max(maxHeight, getSuggestedMinimumHeight());
 
         int heightMode = MeasureSpec.getMode(heightMeasureSpec);
         if (heightMode == MeasureSpec.EXACTLY) {

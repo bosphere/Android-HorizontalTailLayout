@@ -15,7 +15,7 @@ developer.email=[EMAIL]
 */
 
 ext {
-    LIB_VERSION = '1.1.0'
+    LIB_VERSION = '1.1.1'
 
     bintrayRepo = 'maven'
     bintrayName = 'android-horizontal-tail-layout'
@@ -48,21 +48,10 @@ android {
 
     defaultConfig {
         minSdkVersion 7
-        targetSdkVersion 23
-        versionCode 2
-        versionName "1.1.0"
-    }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
     }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////
