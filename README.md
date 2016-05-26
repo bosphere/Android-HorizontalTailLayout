@@ -20,7 +20,7 @@ Usage
 -----
 ```gradle
 dependencies {
-    compile 'com.github.bosphere.android-horizontaltaillayout:horizontaltaillayout:1.1.0'
+    compile 'com.github.bosphere.android-horizontaltaillayout:horizontaltaillayout:1.1.1'
 }
 ```
 
