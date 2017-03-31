@@ -49,7 +49,7 @@ dependencies {
 Compatibility
 -------------
 
-API 7 (Android 2.1) and up
+API 9 (Android 2.3) and up
 
 License
 -------

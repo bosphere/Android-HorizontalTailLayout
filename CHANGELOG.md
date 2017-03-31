@@ -1,6 +1,10 @@
 Change Log
 ============================
 
+## Version 1.1.2
+_2017-03-31_
++ Fix measurement issue with top/bottom padding
+
 ## Version 1.1.1
 _2016-05-26_
 + Support `gravity` attribute with three possible modes: `center`, `center_horizontal` and `center_vertical`

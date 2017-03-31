@@ -15,7 +15,7 @@ developer.email=[EMAIL]
 */
 
 ext {
-    LIB_VERSION = '1.1.1'
+    LIB_VERSION = '1.1.2'
 
     bintrayRepo = 'maven'
     bintrayName = 'android-horizontal-tail-layout'
@@ -43,11 +43,11 @@ ext {
 }
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
-        minSdkVersion 7
+        minSdkVersion 9
     }
 }
 

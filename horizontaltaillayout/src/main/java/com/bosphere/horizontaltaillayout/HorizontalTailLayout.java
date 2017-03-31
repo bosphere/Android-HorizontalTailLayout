@@ -113,7 +113,7 @@ public class HorizontalTailLayout extends ViewGroup {
             maxHeight = Math.max(maxHeight, view.getMeasuredHeight() + lp.topMargin + lp.bottomMargin);
         }
 
-        maxHeight = Math.max(maxHeight, getSuggestedMinimumHeight());
+        maxHeight = Math.max(maxHeight + getPaddingTop() + getPaddingBottom(), getSuggestedMinimumHeight());
 
         int heightMode = MeasureSpec.getMode(heightMeasureSpec);
         if (heightMode == MeasureSpec.EXACTLY) {

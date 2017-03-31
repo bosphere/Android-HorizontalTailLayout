@@ -18,7 +18,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp">
+            android:layout_height="wrap_content">
 
             <View
                 android:id="@+id/img_placeholder"
@@ -31,7 +31,10 @@
             <com.bosphere.horizontaltaillayout.HorizontalTailLayout
                 android:layout_toLeftOf="@+id/img_placeholder"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="1dp"
+                android:layout_centerVertical="true"
                 app:gravity="center">
 
                 <TextView
