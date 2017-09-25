@@ -5,7 +5,7 @@ A simple implementation of a custom layout which solves the issues of grouping a
 
 One example is when right drawable used with `TextView`. To make sure text is ellipsized properly, we normally want to have `TextView` extend to match the full width of its parent view, but the drawable would end up showing in the right-most position though having a pretty short length of text. 
 
-Another example is when you want to append another `TextView` after a length-felxible `TextView` i.e. showing group member count after group name. If group name is really long, we'll want to truncate the group name to leave room for member count. Otherwise we'll want member count to be right next to group name.
+Another example is when you want to append another `TextView` after a length-flexible `TextView` i.e. showing group member count after group name. If group name is really long, we'll want to truncate the group name to leave room for member count. Otherwise we'll want member count to be right next to group name.
 
 Unfortunately there is no straightforward way to implement this using built-in UI widgets.
 
